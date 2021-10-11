@@ -1,0 +1,6 @@
+module Pods_CryptoCalculatorApp {
+  umbrella header "Pods-CryptoCalculatorApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

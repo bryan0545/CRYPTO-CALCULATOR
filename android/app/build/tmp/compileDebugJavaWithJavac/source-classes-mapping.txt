@@ -1,0 +1,14 @@
+com/cryptocalculatorapp/BuildConfig.java
+ com.cryptocalculatorapp.BuildConfig
+com/cryptocalculatorapp/MainActivity.java
+ com.cryptocalculatorapp.MainActivity
+com/cryptocalculatorapp/MainApplication.java
+ com.cryptocalculatorapp.MainApplication
+ com.cryptocalculatorapp.MainApplication$1
+com/cryptocalculatorapp/ReactNativeFlipper.java
+ com.cryptocalculatorapp.ReactNativeFlipper
+ com.cryptocalculatorapp.ReactNativeFlipper$1
+ com.cryptocalculatorapp.ReactNativeFlipper$2
+ com.cryptocalculatorapp.ReactNativeFlipper$2$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList

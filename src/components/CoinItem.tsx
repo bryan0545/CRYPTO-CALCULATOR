@@ -1,16 +1,25 @@
-import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
-import {ICoin} from '../interfaces/coinApi';
+import React from "react";
+import { Image, StyleSheet, Text, View } from "react-native";
+import { ICoin } from "../interfaces/coinApi";
+import Icon from "react-native-vector-icons/Ionicons";
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from "react-native-responsive-screen";
 
 interface IProps {
   coin: ICoin;
 }
 
-const CoinItem = ({coin}: IProps) => {
+const CoinItem = ({ coin }: IProps) => {
+  console.log("--- 8 coin --- ", coin);
   return (
-    <View style={{flexDirection: 'row'}}>
+    <View style={{ flexDirection: "row" }}>
       <View>
-        <Image source={{uri: coin.image}} style={styles.tinyLogo} />
+        <Icon name="star-outline" size={hp(4)} color="#900" />
+      </View>
+      <View>
+        <Image source={{ uri: coin.image }} style={styles.tinyLogo} />
       </View>
       <View>
         <Text>{coin.symbol}</Text>
@@ -31,7 +40,8 @@ export default CoinItem;
 
 const styles = StyleSheet.create({
   tinyLogo: {
-    width: 50,
-    height: 50,
+    resizeMode: "contain",
+    width: wp(8),
+    height: hp(4),
   },
 });

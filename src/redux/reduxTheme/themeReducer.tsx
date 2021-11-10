@@ -1,14 +1,14 @@
-import {ThemeAction} from './themeActions';
-import {ThemeState, lightTheme} from './theme';
+import { ThemeAction } from "./themeActions";
+import { ThemeState, lightTheme } from "./themeState";
 
 const themeReducer = (
   state: ThemeState = lightTheme,
-  action: ThemeAction,
+  action: ThemeAction
 ): ThemeState => {
   switch (action.type) {
-    case 'DARK_THEME':
+    case "DARK_THEME":
       return action.payload;
-    case 'LIGHT_THEME':
+    case "LIGHT_THEME":
       return action.payload;
     default:
       return state;
